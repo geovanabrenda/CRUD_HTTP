@@ -21,4 +21,5 @@ function enviarDados(){
         //Body é um objeto JS que foi convertido para o formato JSON usando JSON.stringify
         body: JSON.stringify({nome: nome, idade: idade, cpf: cpf, email: email, telefone: telefone, endereço: endereço, plano: plano, informacoes: informacoes})
     }) .then(response => response.json())
+    window.location.reload();
 }

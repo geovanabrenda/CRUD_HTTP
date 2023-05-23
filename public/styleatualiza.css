@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text: 1.5rem;
+    --head: calc(1rem + 5vw);
+    --bg-color: #89c2f0;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #89c2f0;
+  }

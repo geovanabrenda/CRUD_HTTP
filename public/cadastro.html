@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <header>Registro</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Seja nosso paciente!</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nome Completo</label>
+                            <input type="text" id="nome" placeholder="Enter name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data de nascimento</label>
+                            <input type="number" id="idade" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CPF</label>
+                            <input type="number" id="cpf" placeholder="Enter cpf" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" id="email" placeholder="Enter your email " required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Plano de Saúde</label>
+                            <select required>
+                                <option disabled selected>Select</option>
+                                <option>UniMed</option>
+                                <option>Amil</option>
+                                <option>Notredame</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Informações adicionais</label>
+                            <input type="text" id="informacoes" placeholder="ex: diabete, pressão alta..." required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Telefone</label>
+                            <input type="text" id="telefone" placeholder="Enter your number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Endereço</label>
+                            <input type="text" id="endereço" placeholder="Enter your endereço" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Sexo</label>
+                            <select required id="plano">
+                                <option disabled selected>Select</option>
+                                <option>Feminino</option>
+                                <option>Masculino</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label> Alergia algum medicamento?</label>
+                            <input type="text" placeholder="Enter state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data Prevista Consulta</label>
+                            <input type="date" placeholder="Enter your issued date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ultima Consulta</label>
+                            <input type="date" placeholder="Enter expiry date" required>
+                        </div>
+                    </div>
+
+            
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+    
+        <input type="button" onclick="enviarDados()" value="Enviar">
+
+   
+    <script src="post.js"></script>
+</body>
+</html>

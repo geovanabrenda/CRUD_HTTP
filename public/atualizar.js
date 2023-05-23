@@ -2,7 +2,7 @@
 function buscarDados() {
     const cpf = document.getElementById('cpfAtualizar').value;
 
-    fetch('http://localhost:3000/pessoas', {
+    fetch('pessoas', {
         method: 'GET'
 })
 .then(response => response.json())
@@ -28,7 +28,7 @@ function atualizarDados() {
     const cpf = document.getElementById('cpfAtualizar').value; 
     const email = document.getElementById('emailAtualizar').value; 
 
-    fetch(`http://localhost:3000/pessoas/${id}`, {
+    fetch(`pessoas/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type' : 'application/json'

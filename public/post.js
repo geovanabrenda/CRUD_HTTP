@@ -11,7 +11,7 @@ function enviarDados(){
 
 
 //Para envio dos dados para o servidor ultilizando metodo fetch()
-    fetch ('http://localhost:3000/pessoas',{
+    fetch ('pessoas',{
         method: 'POST' , // Método HTTP ultilizado
 
         headers:{

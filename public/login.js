@@ -5,7 +5,7 @@ function fazerLogin(){
 
     //Busca cujo o nome e idade coicidem com os valores digitados 
     // p = parametro do find (procurar). Função CallBack
-    fetch('http://localhost:3000/pessoas/') .then(response => response.json()) .then(data => {
+    fetch('pessoas') .then(response => response.json()) .then(data => {
         const pessoa = data.find(p => p.nome === nome && p.cpf == cpf);
 
         if(pessoa){
